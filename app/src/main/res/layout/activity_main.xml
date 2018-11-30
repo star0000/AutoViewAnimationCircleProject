@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gzl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.autoviewanimationcircleproject.MainActivity">
+
+    <!--顺时针增加-->
+   <com.example.autoviewanimationcircleproject.CircleProgressView
+       android:id="@+id/circleProgress1"
+       android:layout_width="45dp"
+       android:layout_height="45dp"
+       gzl:circleColor="#64000000"
+       gzl:ringWidth="3dp"
+       gzl:ringColor="#ff8800"
+       gzl:textColor="#FFFFFF"
+       gzl:text="Skip"
+       gzl:textSize="14sp"
+       gzl:stillTime="3000"
+       gzl:direction="ClockWise"
+       gzl:offset="InCrease"/>
+
+    <!--顺时针减少-->
+    <com.example.autoviewanimationcircleproject.CircleProgressView
+        android:id="@+id/circleProgress2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        gzl:circleColor="@android:color/holo_blue_light"
+        gzl:ringWidth="10dp"
+        gzl:ringColor="@android:color/holo_green_light"
+        gzl:textColor="#FFFFFF"
+        gzl:text="Run"
+        gzl:textSize="18sp"
+        gzl:stillTime="6000"
+        gzl:direction="ClockWise"
+        gzl:offset="DeCrease"/>
+
+    <!--逆时针增加-->
+    <com.example.autoviewanimationcircleproject.CircleProgressView
+        android:id="@+id/circleProgress3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        gzl:circleColor="@android:color/holo_green_light"
+        gzl:ringWidth="10dp"
+        gzl:ringColor="@android:color/holo_purple"
+        gzl:textColor="#FFFFFF"
+        gzl:text="Run"
+        gzl:textSize="18sp"
+        gzl:stillTime="6000"
+        gzl:direction="CounterClockWise"
+        gzl:offset="InCrease"/>
+
+    <!--逆时针减少-->
+    <com.example.autoviewanimationcircleproject.CircleProgressView
+        android:id="@+id/circleProgress4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        gzl:circleColor="@android:color/holo_orange_light"
+        gzl:ringWidth="10dp"
+        gzl:ringColor="@android:color/holo_red_light"
+        gzl:textColor="#FFFFFF"
+        gzl:text="Run"
+        gzl:textSize="18sp"
+        gzl:stillTime="10000"
+        gzl:direction="CounterClockWise"
+        gzl:offset="DeCrease"/>
+
+
+</LinearLayout>
